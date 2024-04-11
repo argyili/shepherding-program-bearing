@@ -12,7 +12,7 @@ For instance, use this command to set config file `config/demo.json`.
 python3 main.py -p "config/demo.json"
 ```
 
-## Description of Files
+## Description of files
 
 - `main.py` and `shepherding/trial.py` are key files.
 - `shepherding/model` is the folder of sheep model and shepherd model.
@@ -25,7 +25,7 @@ python3 main.py -p "config/demo.json"
 ##  Program for paper
 
 - `shepherding/method/degree/degree.py` corresponds to the proposed shepherding algorithm.
-- `config/1_shepherd-multi` corresponds to the initial configurations. (Figure 5-7)
-- `config/2_shepherd-angle` corresponds to the initial configurations in increasing angle errors. (Figure 8)
-- `config/3_shepherd_no-comm` corresponds to the intial configurations in shepherding with no communication. (Figure 9,10)
+- `config/1_shepherd-multi` corresponds to the initial configurations.
+- `config/2_shepherd-angle` corresponds to the initial configurations in increasing angle errors.
+- `config/3_shepherd_no-comm` corresponds to the intial configurations in shepherding with no communication.
 - `../shepherding-log` stores the figures used in the paper. Only one sample data is stored due to the extremely large size of the original simulation data.
