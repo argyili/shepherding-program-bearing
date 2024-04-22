@@ -1,5 +1,3 @@
-<!-- Reimplemented on Feb 13, 2023 -->
-
 # Shepherding Program
 
 Program for the paper "Swarm Shepherding Using Bearing-only Measurements".
