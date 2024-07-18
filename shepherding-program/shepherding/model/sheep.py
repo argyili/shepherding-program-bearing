@@ -8,8 +8,8 @@ class Sheep:
         # Initialize
         self.R = param["sheep_range"]
         self.no = i
-        self.p1_c = param["sheep_param"][0] # cohesion
-        self.p1_s = param["sheep_param"][1] # separation
+        self.p1_s = param["sheep_param"][0] # separation
+        self.p1_c = param["sheep_param"][1] # cohesion
         self.p2 = param["sheep_param"][2] # alignment
         self.p3 = param["sheep_param"][3] # repulsion from shepherds
         self.p4 = param["sheep_param"][4] # noise
@@ -53,7 +53,7 @@ class Sheep:
                 # tmp: separation + cohesion
                 tmp = other.position - self.position
                 if np.linalg.norm(tmp) < self.limit: tmp = tmp / np.linalg.norm(tmp) * self.limit
-                u1 = u1 + self.p1_c * tmp / np.linalg.norm(tmp) - self.p1_s * tmp / np.power(np.linalg.norm(tmp), 3) 
+                u1 = u1 - self.p1_s * tmp / np.power(np.linalg.norm(tmp), 3) + self.p1_c * tmp / np.linalg.norm(tmp)
                 
                 
                 # alignment
